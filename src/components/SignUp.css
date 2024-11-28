@@ -1,0 +1,43 @@
+.signup-container {
+    max-width: 500px; /* 최대 너비를 줄임 */
+    margin: 30px auto; /* 상하 마진 30px, 좌우는 auto로 중앙 정렬 */
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'GmarketSansMedium', sans-serif;
+  }
+  
+  /* 추가: 전체 페이지에 패딩을 주어 양쪽에 여백을 만듭니다 */
+  .signup-page {
+    padding: 0 30%; /* 좌우에 15%의 패딩을 줍니다 */
+  }
+  
+  .signup-container h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-family: 'GmarketSansMedium', sans-serif;
+  }
+  
+  .signup-form-button {
+    width: 100%;
+    font-family: 'SBAggroB', sans-serif;
+  }
+  
+  .ant-form-item {
+    margin-bottom: 16px;
+    font-family: 'GmarketSansMedium', sans-serif;
+  }
+
+  .login-link {
+    text-align: center;
+    margin-top: 15px;
+    font-family: 'GmarketSansMedium', sans-serif;
+  }
+
+  @font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,95 @@
+.car-card-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    font-family: 'GmarketSansMedium', sans-serif;
+  }
+  
+  .car-card {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'GmarketSansMedium', sans-serif;
+  }
+  
+  .car-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    font-family: 'GmarketSansMedium', sans-serif;
+  }
+  
+  .car-card-image {
+    border-radius: 16px 16px 0 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .car-card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'GmarketSansMedium', sans-serif;
+  }
+  
+  .car-card-info {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 5px;
+  }
+  
+  .car-card-price {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .car-card-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-family: 'GmarketSansMedium', sans-serif;
+  }
+  
+  .car-card:hover .car-card-buttons {
+    opacity: 1;
+  }
+  
+  .car-card-button-primary {
+    width: 100%;
+    background-color: #003366;
+    border-color: #003366;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'GmarketSansMedium', sans-serif;
+  }
+  
+  .car-card-button-secondary {
+    flex: 1;
+    margin-left: 10px;
+    background-color: #F5F5DC;
+    border-color: #F5F5DC;
+    color: #333;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'GmarketSansMedium', sans-serif;
+    transition: background-color 0.3s ease; /* 부드러운 전환 효과 */
+  }
+
+  .car-card-button-secondary:hover {
+    background-color:  #FFF5E1; /* 마우스 올릴 때 색상 */
+  }
+
+  @font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }

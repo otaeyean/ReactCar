@@ -1,0 +1,118 @@
+.car-info-container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'GmarketSansMedium', sans-serif;
+}
+
+.car-image {
+  width: 100%;
+  height: 110vh;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.car-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.car-details-reviews {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  position: relative;
+  top: -30px; /* 이미지 아래로 내려서 배치 */
+  margin-top: -30px; /* 이미지를 더 부드럽게 내리기 위한 마진 */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car-details, .reviews {
+  width: 48%;
+}
+
+.review-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  font-family: 'GmarketSansMedium', sans-serif;
+}
+
+.back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'GmarketSansMedium', sans-serif;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.view-3d-button, .back-to-details-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.view-3d-button:hover, .back-to-details-button:hover {
+  background-color: #218838;
+}
+
+.car-3d-viewer {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.star-filled {
+  color: #FFD700; /* 노란색 별 */
+}
+
+.star-empty {
+  color: #D3D3D3; /* 회색 별 */
+}
+
+.review-enter {
+  opacity: 0;
+  transform: translateY(20px); /* 아래로 내려가도록 설정 */
+}
+
+.review-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.review-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.review-exit-active {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 500ms, transform 500ms;
+}
+
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
